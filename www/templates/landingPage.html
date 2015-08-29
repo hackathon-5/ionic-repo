@@ -10,13 +10,13 @@
     <div class="spacer" style="height: 170px;"></div>
 
 
-	<div class="list list-inset bloomy-text" ng-show="joining">
-		<label class="item item-input">
+	<div class="list list-inset" ng-show="joining" style="border-radius:10px; background: lightGrey">
+		<label class="item item-input" class="familyCode">
 		    <input type="text" placeholder="Family Code" />
 		</label>
 	</div>
 
-	<div class="list list-inset bloomy-text" ng-show="registering">
+	<div class="list list-inset bloomy-text" style="border-radius:10px; background: lightGrey" ng-show="registering">
 		<label class="item item-input">
 		    <input ng-model="username" type="email" placeholder="Email" />
 		</label>
@@ -28,8 +28,8 @@
 	</ion-content>
 
 	<div class="button-bar fixed-outside">
-		<a class="button button-full bloomy-text" ng-click="toggleRegister()">Register</a>
-		<a class="button button-full bloomy-text" href="#/dashboard">Join Family</a>
+		<a style="border-radius:20px; margin: 10px 10px" class="button button-full bloomy-text" ng-click="toggleRegister()">Register</a>
+		<a style="border-radius:20px; margin: 10px 10px" class="button button-full bloomy-text" href="#/dashboard">Join Family</a>
 	</div>
 
 

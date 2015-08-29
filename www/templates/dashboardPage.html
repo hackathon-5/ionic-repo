@@ -8,20 +8,18 @@
 
     <div class="spacer" style="height: 30px;"></div>
 
-	<div class="list"> 
-
+	<div class="list"> 		
 		
-		
-		<a class="item" href="#/profileJ" >
-		<h2 align="center" style="font-size:30px">James</h2>
+		<a class="item padding" href="#/profileJ" ng-class="{'noQuery' : noQuery, 'noResponse' : noResponse, 'acknowledged' : acknowledged, 'returning' : returning}">
+		<h2 align="center" style="font-size:30px;" >James</h2>
 		<img style="height:100px; width:100px; display:block; margin-left: auto; margin-right:auto"src="img/child1.png"> 
 		<h4 align="center" style="font-size:15px">{{jamesLoc}}</h4> <h4 align="center" style="font-size:15px"> 18 Points</h4>
 		</a>
 
 		<div class="spacer" style="height: 15px;"></div>
 
-		<a class="item" href="#/profileS">
-		<h2 align="center" style="font-size:30px">Sara</h2>
+		<a class="item padding" href="#/profileS" ng-class="{'noQuery' : noQuery, 'noResponse' : noResponse, 'acknowledged' : acknowledged, 'returning' : returning}">
+		<h2 align="center" style="font-size:30px;">Sara</h2>
 		<img style="height:100px; width:100px; display:block; margin-left: auto; margin-right:auto"src="img/child2.png">
 		<h4 align="center" style="font-size:15px"> {{saraLoc}}</h4> <h4 align="center" style="font-size:15px"> 24 Points</h4>
 		</a>
@@ -35,7 +33,7 @@
 
 	<div class="button-bar fixed-outside">
 		<a class="button button-full bloomy-text" ng-click="locateKids()">Locate Kids</a>
-		<a class="button button-full bloomy-text" ng-click="callKids()">Come Home</a>
+		<a class="button button-full bloomy-text" ng-click="callKids(); childStatus()">Come Home</a>
 	</div>
 
 

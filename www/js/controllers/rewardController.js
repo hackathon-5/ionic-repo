@@ -1,4 +1,4 @@
-bloomApp.controller('RewardController', function($rootScope,$scope,$ionicModal,$ionicSideMenuDelegate,ionicMaterialInk) {
+bloomApp.controller('RewardController', function($rootScope,$scope,$ionicModal,$ionicSideMenuDelegate,ionicMaterialInk,ionicMaterialMotion) {
 
 
 	$scope.newReward = {};

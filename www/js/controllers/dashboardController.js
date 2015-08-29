@@ -1,6 +1,10 @@
-bloomApp.controller('DashboardController', function($ionicLoading,$scope,$ionicSideMenuDelegate,ionicMaterialInk) {
+bloomApp.controller('DashboardController', function($timeout,$state,$ionicLoading,$scope,$ionicSideMenuDelegate,ionicMaterialInk) {
 
 	$scope.notifications = true;
+
+	$scope.returnToDashboard = function(){
+		$state.go('dashboard');
+	};
 
 	$scope.changeView = function(state){
 		if($scope.notifications && state != 'task'){
@@ -8,6 +12,19 @@ bloomApp.controller('DashboardController', function($ionicLoading,$scope,$ionicS
 		}else if(!$scope.notifications && state == 'task'){
 			$scope.notifications = true;
 		}
+	}
+
+	$scope.noQuery = true; 
+
+	$scope.childStatus = function(){
+		$scope.noQuery = false;
+		$timeout(function() { $scope.noResponse = true; }, 2000);
+		$timeout(function() { $scope.acknowledged = true; }, 4000);
+		$timeout(function() { $scope.returning = true; }, 6000);
+		$timeout(function() { $scope.noQuery = true; }, 8000).then(function(){
+			$scope.noQuery = true;
+		})
+
 	}
 
 	$scope.addresses = [
@@ -64,9 +81,9 @@ bloomApp.controller('DashboardController', function($ionicLoading,$scope,$ionicS
 	var init = function(){
 	}
 
-	angular.element(document).ready(function () {
-	  ionicMaterialInk.displayEffect();
-	});
+	// angular.element(document).ready(function () {
+	//   ionicMaterialInk.displayEffect();
+	// });
 
 	init();
 

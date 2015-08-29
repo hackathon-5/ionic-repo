@@ -114,4 +114,27 @@ http://forum.ionicframework.com/t/explicit-vertical-aligning/2024 */
   
 }
 
+.noResponse{
+  outline: red solid thick;
+}
+
+.acknowledged{
+  outline: yellow solid thick;
+}
+
+.returning{
+  outline: green solid thick;
+}
+
+.noQuery{
+  outline: transparent solid thick;
+}
+
+.familyCode {
+  border-radius: 5px 0 5px 0;
+}
+/*
+.border-rad{
+  border-radius: 5px 0;
+}*/
 
