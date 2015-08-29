@@ -1,4 +1,4 @@
-var bloomApp = angular.module('bloom', ['ionic','ionic-material'])
+var bloomApp = angular.module('bloom', ['ionic','ionic-material','ngCordova'])
 
 bloomApp.run(function($ionicPlatform) {
 
@@ -8,10 +8,7 @@ bloomApp.run(function($ionicPlatform) {
       cordova.plugins.Keyboard.disableScroll(true);
 
     }
-    if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
+
   });
 });
 
@@ -22,7 +19,19 @@ bloomApp.config(function($stateProvider, $urlRouterProvider) {
     .state('landing', {
       url: '/landing',
       templateUrl: 'templates/landingPage.html',
-      controller: 'landingController'
+      controller: 'LandingController'
+    })
+
+    .state('dashboard', {
+      url: '/dashboard',
+      templateUrl: 'templates/dashboardPage.html',
+      controller: 'DashboardController'
+    })
+
+    .state('task', {
+      url: '/task',
+      templateUrl: 'templates/taskPage.html',
+      controller: 'TaskController'
     })
 
     ;

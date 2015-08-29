@@ -1,0 +1,19 @@
+<ion-view view-title="Tasks">
+
+	<ion-nav-buttons side="left">
+		<button class="button button-clear button-dark icon ion-drag" ng-click="toggleLeft()"></button>
+	</ion-nav-buttons>
+
+	<ion-content>
+
+
+    <div class="card padding" ng-repeat="item in taskList">
+    	{{item.title}}
+    </div>
+
+	</ion-content>
+
+	<button id="fab" class="button bloomy button-fab button-fab-bottom-right icon ion-plus-round"></button>
+
+</ion-view>
+

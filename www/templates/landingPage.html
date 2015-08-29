@@ -1,5 +1,38 @@
-<ion-view view-title="Landing">
-  <ion-content>
-  	<h1>Testing</h1>
-  </ion-content>
+<ion-view view-title="" has-header="false">
+
+	<ion-nav-buttons side="left">
+		<button class="button button-clear button-dark icon ion-drag" ng-click="toggleLeft()"></button>
+	</ion-nav-buttons>
+
+	<ion-content class="login-background">
+
+
+    <div class="spacer" style="height: 170px;"></div>
+
+
+	<div class="list list-inset bloomy-text" ng-show="joining">
+		<label class="item item-input">
+		    <input type="text" placeholder="Family Code" />
+		</label>
+	</div>
+
+	<div class="list list-inset bloomy-text" ng-show="registering">
+		<label class="item item-input">
+		    <input ng-model="username" type="email" placeholder="Email" />
+		</label>
+		<label class="item item-input">
+		    <input ng-model="password" type="password" placeholder="Password" />
+		</label>
+	</div>
+
+	</ion-content>
+
+	<div class="button-bar fixed-outside">
+		<a class="button button-full bloomy-text" ng-click="toggleRegister()">Register</a>
+		<a class="button button-full bloomy-text" href="#/dashboard">Join Family</a>
+	</div>
+
+
 </ion-view>
+
+

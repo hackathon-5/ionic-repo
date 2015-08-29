@@ -1,1 +1,26 @@
-/* Empty. Add your own CSS if you like */
+.bloomy {
+	background-color: #33D0CB ;
+}
+
+.bloomy-text {
+	color: #33D0CB ;
+	opacity: 0.9;
+}
+
+.login-background {
+    background-image : url('../img/landing.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*This keeps the button is positioned at the 
+bottom of the login page */
+.fixed-outside{
+  position: fixed;
+  bottom: 0;
+  color:white;
+  width: 100%;
+  height:  70px;
+  text-align:center;
+}
