@@ -23,6 +23,8 @@
     <script src="js/controllers/landingController.js"></script>
     <script src="js/controllers/dashboardController.js"></script>
     <script src="js/controllers/taskController.js"></script>
+    <script src="js/controllers/rewardController.js"></script>
+    <script src="js/controllers/manageFamilyController.js"></script>
 
   </head>
 
@@ -35,21 +37,14 @@
         <ion-side-menu side="left">
             <ion-content scroll="true">
                 <div class="list">
-                <a menu-close class="item item-icon-left" data-ink-color="#33D0CB" data-ink-opacity=".8">
-                    <i style="padding-right:10px" class="icon icon-left ion-compass"></i> Locate Kids
-                </a>
 
-                <a menu-close class="item item-icon-left" data-ink-color="#33D0CB" data-ink-opacity=".8">
-                    <i style="padding-right:10px" class="icon icon-left ion-home"></i> Come Home
-                </a>
-
-                <a menu-close class="item item-icon-left" data-ink-color="#33D0CB" data-ink-opacity=".8">
+                <a menu-close href="#/manageFamily" class="item item-icon-left" data-ink-color="#33D0CB" data-ink-opacity=".8">
                     <i style="padding-right:10px" class="icon icon-left ion-person-stalker"></i> Manage Family
                 </a>
-
+<!-- 
                 <a menu-close class="item item-icon-left" data-ink-color="#33D0CB" data-ink-opacity=".8">
                     <i style="padding-right:10px" class="icon icon-left ion-gear-a"></i> Settings
-                </a>
+                </a> -->
 
                 <a menu-close class="item item-icon-left" data-ink-color="#33D0CB" data-ink-opacity=".8">
                     <i style="padding-right:10px" class="icon icon-left ion-clock"></i> Activity Timer
@@ -63,7 +58,7 @@
                     <i style="padding-right:10px" class="icon icon-left ion-calendar"></i>Family Calendar
                 </a>
 
-                <a menu-close class="item item-icon-left" data-ink-color="#33D0CB" data-ink-opacity=".8">
+                <a menu-close href="#/reward" class="item item-icon-left" data-ink-color="#33D0CB" data-ink-opacity=".8">
                     <i style="padding-right:10px" class="icon icon-left ion-ribbon-a"></i>Rewards
                 </a>
 

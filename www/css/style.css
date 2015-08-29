@@ -13,6 +13,35 @@
     background-attachment: fixed;
     background-size: cover;
 }
+.reward-background {
+    background-image : url('../img/reward.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.manageFamily-background {
+    background-image : url('../img/managefamily.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.tasks-background {
+    background-image : url('../img/tasks.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.dashboard-background {
+    background-image : url('../img/dashboard.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 
 /*This keeps the button is positioned at the 
 bottom of the login page */

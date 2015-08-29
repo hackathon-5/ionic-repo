@@ -1,9 +1,11 @@
 bloomApp.controller('TaskController', function($rootScope,$scope,$ionicSideMenuDelegate,ionicMaterialInk,ionicMaterialMotion) {
 
 	$scope.data = {
-		task1: {title : "Walk the cat"},
-		task2: {title: "Take out the trash"},
-		task3: {title: "do the dishes"}
+		task1: {title : "Walk the Cat"},
+		task2: {title: "Do the Dishes"},
+		task3: {title: "Practice Cello"},
+		task4: {title: "Practice For Lacrosse"}
+
 	};
 
 	window.localStorage.taskData = JSON.stringify($scope.data);

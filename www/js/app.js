@@ -34,6 +34,18 @@ bloomApp.config(function($stateProvider, $urlRouterProvider) {
       controller: 'TaskController'
     })
 
+    .state('reward', {
+      url: '/reward',
+      templateUrl: 'templates/rewardPage.html',
+      controller: 'RewardController'
+    })
+
+    .state('manageFamily', {
+      url: '/manageFamily',
+      templateUrl: 'templates/manageFamilyPage.html',
+      controller: 'ManageFamilyController'
+    })
+
     ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/landing');

@@ -1,0 +1,19 @@
+<ion-view view-title="Rewards">
+
+	<ion-nav-buttons side="left">
+		<button class="button button-clear button-dark icon ion-drag" ng-click="toggleLeft()"></button>
+	</ion-nav-buttons>
+
+	<ion-content class="reward-background">
+
+	<div class="card" ng-repeat="item in rewardList">
+	  <a class="item" href="#" >
+	    {{item.title}}
+	    <span class="badge badge-assertive">{{item.price}}</span>
+	  </a>
+	</div>
+
+	</ion-content>
+
+</ion-view>
+
