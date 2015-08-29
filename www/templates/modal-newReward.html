@@ -1,0 +1,33 @@
+<ion-modal-view>
+
+  <div class="bar bar-header bloomy">
+    <div class="buttons buttons-left header-item">
+      <span class="left-buttons">
+        <button class="button button-icon button-clear ion-android-arrow-back" ng-click="closeRewardModal()"></button>
+      </span>
+    </div>
+    <div class="h1 title">
+    <!-- {{specificGroup.title}} -->
+    New Reward
+    </div>
+  </div>
+
+  <ion-content class="reward-background has-header">
+
+    <div class="list list-inset">
+
+      <label class="item item-input">
+      <input ng-model="newReward.title" type="text" style="padding-left:5px" placeholder="Reward Title" />
+      </label>
+
+      <label class="item item-input">
+        <input ng-model="newReward.value" type="number" style="padding-left:5px" placeholder="Point Value" /> 
+      </label>
+
+    </div>
+
+    <button ng-click="submitReward();closeRewardModal()" class="button button-full button-assertive">Submit</button>
+
+  </ion-content>
+
+</ion-modal-view>

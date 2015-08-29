@@ -28,6 +28,24 @@ bloomApp.config(function($stateProvider, $urlRouterProvider) {
       controller: 'DashboardController'
     })
 
+    .state('calendar', {
+      url: '/calendar',
+      templateUrl: 'templates/calendarPage.html',
+      controller: 'DashboardController'
+    })
+
+    .state('profileJ', {
+      url: '/profileJ',
+      templateUrl: 'templates/profilePageJ.html',
+      controller: 'DashboardController'
+    })
+
+    .state('profileS', {
+      url: '/profileS',
+      templateUrl: 'templates/profilePageS.html',
+      controller: 'DashboardController'
+    })
+
     .state('task', {
       url: '/task',
       templateUrl: 'templates/taskPage.html',

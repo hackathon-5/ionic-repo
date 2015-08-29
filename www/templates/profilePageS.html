@@ -1,0 +1,53 @@
+<ion-view>
+
+  <ion-nav-title>{{profileInfoS.firstName}}</ion-nav-title>
+  <ion-nav-buttons side="left">
+    <button class="button button-clear button-dark icon ion-drag" ng-click="toggleLeft()"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="ionic-scroll has-header dashboard-background">  
+
+    <div class="hero grad" >
+      <div class="content">
+        <div class="avatar">
+          <img  ng-src="{{profileInfoS.profilePic}}" style="border-radius: 50%; height:85px; width:85px;" />
+        </div>
+        <h3>{{profileInfoS.firstName}} {{profileInfoS.lastName}}</h3>
+        <p>{{profileInfoS.points}} Points</p>
+      </div>
+    </div>
+    <div class="tabs bloomy tabs-icon-top static">
+      <a class="tab-item" ng-click="changeView('task')">
+        <i class="icon ion-android-notifications"></i>
+        Tasks
+      </a>
+      <a class="tab-item" ng-click="changeView('reward')">
+        <i class="icon ion-cash"></i>
+        Rewards
+      </a>
+    </div>
+
+
+
+    <div ng-show="notifications">
+      <h3 align="center">Recently Completed</h3>
+      <a class="item item-icon-left item-text-wrap" ng-repeat="task in recentTasks">
+        <i class="icon ion-trophy"></i>
+        {{task.title}}
+        <span class="badge badge-assertive">{{task.value}}</span>
+      </a>
+    </div>
+
+
+    <div ng-hide="notifications">
+      <h3 align="center">Recently Earned</h3>
+      <a class="item item-icon-left item-text-wrap" ng-repeat="task in recentRewards">
+        <i class="icon ion-ribbon-b"></i>
+        {{profileInfoS.firstName}} {{task.description}}
+      </a>
+    </div>
+
+
+  </ion-content>
+  
+</ion-view>

@@ -16,7 +16,6 @@ bloomApp.controller('TaskController', function($ionicModal,$timeout,$rootScope,$
 	}
 
 	$scope.submitTask = function(){
-		console.log("submitting");
 		$scope.data = JSON.parse(window.localStorage.taskData);
 		$scope.data.push({title: $scope.newTask.title, value: $scope.newTask.value});
 		window.localStorage.taskData = JSON.stringify($scope.data);
