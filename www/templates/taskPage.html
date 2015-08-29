@@ -8,7 +8,7 @@
 
 
     <div class="card" ng-repeat="item in taskList">
-    	<ion-checkbox class="checkbox-calm"ng-model="isChecked">{{item.title}} <span class="badge badge-assertive">{{item.value}}</span></ion-checkbox>
+    	<ion-checkbox class="checkbox-calm"ng-model="isChecked" ng-click="awardPoints()">{{item.title}} <span class="badge badge-assertive">{{item.value}}</span></ion-checkbox>
     </div>
 
 	</ion-content>
