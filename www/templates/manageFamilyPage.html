@@ -4,10 +4,23 @@
 		<button class="button button-clear button-dark icon ion-drag" ng-click="toggleLeft()"></button>
 	</ion-nav-buttons>
 
+
+	<ion-nav-buttons side="right">
+		<button class="button button-clear button-dark icon ion-home" ng-click="setHome()"></button>
+		<button class="button button-clear button-dark icon ion-university" ng-click="setSchool()"></button>
+	</ion-nav-buttons>
+
 	<ion-content class="manageFamily-background">
 
 
 	</ion-content>
+
+
+	<div class="card padding fixed-outside">
+		<p align="left">Home: {{home}}</p> 
+		<p align="left">School: {{school}}</p> 
+	</div>
+
 
 </ion-view>
 

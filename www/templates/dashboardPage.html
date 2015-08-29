@@ -6,15 +6,33 @@
 
 	<ion-content class="dashboard-background">
 
+    <div class="spacer" style="height: 30px;"></div>
+
+	<div class="list"> 
+
+		
+		<h2 align="center">James</h2>
+		<a><img style="height:100px; width:100px; display:block; margin-left: auto; margin-right:auto"src="img/child1.png"> </a> 
+		<h4 align="center">{{jamesLoc}}</h4> <h4 align="center"> 18 Points</h4>
+
+
+		<div class="spacer" style="height: 15px;"></div>
+
+		<h2 align="center">Sara</h2>
+		<a><img style="height:100px; width:100px; display:block; margin-left: auto; margin-right:auto"src="img/child2.png"> </a> 
+		<h4 align="center"> {{saraLoc}}</h4> <h4 align="center"> 24 Points</h4>
+
+
+	</div>
+                
+
 	</ion-content>
 
 
 	<div class="button-bar fixed-outside">
-		<a class="button button-full bloomy-text">Locate Kids</a>
-		<a class="button button-full bloomy-text">Come Home</a>
+		<a class="button button-full bloomy-text" ng-click="locateKids()">Locate Kids</a>
+		<a class="button button-full bloomy-text" ng-click="callKids()">Come Home</a>
 	</div>
-
-
 
 
 </ion-view>

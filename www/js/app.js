@@ -46,6 +46,12 @@ bloomApp.config(function($stateProvider, $urlRouterProvider) {
       controller: 'ManageFamilyController'
     })
 
+    .state('route', {
+      url: '/route',
+      templateUrl: 'templates/schoolRoute.html',
+      controller: 'ManageFamilyController'
+    })
+
     ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/landing');

@@ -7,13 +7,13 @@
 	<ion-content class="tasks-background">
 
 
-    <div class="card padding" ng-repeat="item in taskList">
-    	{{item.title}}
+    <div class="card" ng-repeat="item in taskList">
+    	<ion-checkbox class="checkbox-calm"ng-model="isChecked">{{item.title}} <span class="badge badge-assertive">{{item.value}}</span></ion-checkbox>
     </div>
 
 	</ion-content>
 
-	<button id="fab" class="button bloomy button-fab button-fab-bottom-right icon ion-plus-round"></button>
+	<button id="fab" ng-click="openTaskModal()" class="button bloomy button-fab button-fab-bottom-right icon ion-plus-round"></button>
 
 </ion-view>
 
